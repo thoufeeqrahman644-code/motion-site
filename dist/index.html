@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c8e1ef">
+  <meta name="description" content="A happy little holiday for your favourite companion. Discover Pillow Paws, a cosy dog hotel made for good stays and great days.">
+  <title>Pillow Paws — Their happy place.</title>
+  <link rel="icon" href="assets/paw.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <section class="hero" aria-label="Welcome to Pillow Paws">
+    <header class="header">
+      <a class="brand" href="#" aria-label="Pillow Paws home">
+        <svg class="brand-mark" viewBox="0 0 56 56" aria-hidden="true"><path d="M11 9Q28 4 45 9Q51 28 45 47Q28 52 11 47Q5 28 11 9Z"/><g class="paw"><ellipse cx="19" cy="22" rx="4" ry="5" transform="rotate(-22 19 22)"/><ellipse cx="28" cy="18" rx="4" ry="5"/><ellipse cx="37" cy="22" rx="4" ry="5" transform="rotate(22 37 22)"/><path d="M19 34C19 28 24 25 28 25S37 28 37 34C37 41 31 37 28 37S19 41 19 34Z"/></g></svg>
+        <span>pillow paws<span class="brand-sub">A LITTLE HOME AWAY FROM HOME</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <button class="nav-link" data-panel="stay">The stay</button>
+        <button class="nav-link" data-panel="care">Our kind of care</button>
+        <button class="nav-link" data-panel="questions">Good to know <span aria-hidden="true">↗</span></button>
+      </nav>
+      <button class="button nav-book" data-book>Book a stay <span aria-hidden="true">↗</span></button>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+    </header>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile navigation" hidden>
+      <button data-panel="stay">The stay</button><button data-panel="care">Our kind of care</button><button data-panel="questions">Good to know</button><button data-book>Book a stay ↗</button>
+    </nav>
+    <main id="main">
+      <div class="headline">
+        <div class="eyebrow"><span></span> A BOUTIQUE HOTEL FOR VERY GOOD DOGS</div>
+        <h1>Their happy place<span class="full-stop">.</span></h1>
+        <svg class="headline-spark" viewBox="0 0 50 60" aria-hidden="true"><path d="M7 28 22 32M25 5 28 22M45 16 35 29"/></svg>
+      </div>
+      <div class="hero-copy">
+        <p>A little holiday.<br> A whole lot of love.</p>
+        <p class="description">Cosy corners, new friends and all the comforts of home. A lovely stay for them. Peace of mind for you.</p>
+        <button class="button primary" data-book>Book a stay <span aria-hidden="true">↗</span></button>
+        <span class="copy-footnote">Pack their favourite toy.<br>We’ll take care of the rest.</span>
+      </div>
+      <div class="holiday-seal" aria-label="Made for happy paws and peaceful minds"><svg viewBox="0 0 148 148" aria-hidden="true"><defs><path id="circle" d="M74,74m-56,0a56,56 0 1,1 112,0a56,56 0 1,1 -112,0"/></defs><circle cx="74" cy="74" r="72"/><text><textPath href="#circle" textLength="347">HAPPY PAWS · PEACEFUL MINDS · </textPath></text><path class="seal-heart" d="M74 92C35 69 59 45 74 63C89 45 113 69 74 92Z"/></svg><span>A stay worth<br>the tail wags.</span></div>
+      <div class="dog-stage" role="img" aria-label="Two cheerful, fluffy 3D dogs greeting you with their front paws over the ledge. Their eyes gently follow your pointer.">
+        <img class="dogs-base" src="assets/dogs-base.png" alt="" fetchpriority="high" width="1536" height="1024" draggable="false">
+        <div class="eye eye-gold-left" data-dog="gold" aria-hidden="true"><div class="sclera"></div><img class="pupil" src="assets/pupil.svg" alt=""><div class="eyelid"></div></div>
+        <div class="eye eye-gold-right" data-dog="gold" aria-hidden="true"><div class="sclera"></div><img class="pupil" src="assets/pupil.svg" alt=""><div class="eyelid"></div></div>
+        <div class="eye eye-curl-left" data-dog="curl" aria-hidden="true"><div class="sclera"></div><img class="pupil" src="assets/pupil.svg" alt=""><div class="eyelid"></div></div>
+        <div class="eye eye-curl-right" data-dog="curl" aria-hidden="true"><div class="sclera"></div><img class="pupil" src="assets/pupil.svg" alt=""><div class="eyelid"></div></div>
+      </div>
+      <div class="ledge" aria-hidden="true"></div>
+      <div class="ledge-label"><span class="tiny-paw" aria-hidden="true">✧</span> Come for a stay. Leave with a wag.</div>
+      <button class="motion-toggle" aria-pressed="false" title="Pause eye animation"><span aria-hidden="true">Ⅱ</span> <span class="motion-text">Pause eyes</span></button>
+      <div class="pointer-note" aria-hidden="true"><svg viewBox="0 0 100 45"><path d="M3 5C10 35 60 40 91 12M78 13 92 10 88 25"/></svg>Oh, hello you!</div>
+    </main>
+  </section>
+  <dialog id="info-dialog" class="info-dialog" aria-labelledby="dialog-title">
+    <button class="close-dialog" aria-label="Close dialog">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+</html>

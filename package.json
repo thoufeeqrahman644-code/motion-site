@@ -1,0 +1,1 @@
+{"name":"pillow-paws","version":"1.0.0","private":true,"description":"Pillow Paws premium dog hotel hero concept","scripts":{"dev":"node server.mjs","check":"node --check dist/script.js"}}
