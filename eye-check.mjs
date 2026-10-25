@@ -1,7 +1,7 @@
 import {readFileSync} from 'node:fs';
 import {runInNewContext} from 'node:vm';
 import assert from 'node:assert/strict';
-const source=readFileSync('dist/script.js','utf8').split("const dialog=document.querySelector")[0];
+const source=readFileSync('dist/script.js','utf8').split("const mobileMenu=document.querySelector")[0];
 function setup(reduced=false){
   const events={},timers=new Map(),frames=new Map();let id=0;
   const eyes=Array.from({length:4},(_,i)=>({dataset:{dog:i<2?'gold':'curl'},pupil:{style:{}},classList:{add(){},remove(){}},querySelector(){return this.pupil},getBoundingClientRect(){return {left:100+i*100,top:100,width:80,height:80}}}));
